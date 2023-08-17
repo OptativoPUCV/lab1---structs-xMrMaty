@@ -484,3 +484,18 @@ Thu 17 Aug 2023 02:36:22 AM UTC:
  tests:  0|1
 total_score: 60/70
 c50b9af
+Thu 17 Aug 2023 02:41:15 AM UTC: 
+ exercises.c | 26 +++++++++++++++++++++++++-
+ 1 file changed, 25 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:179:19: error: implicit declaration of function ‘crearNodo’ [-Werror=implicit-function-declaration]
+  179 |   Nodo *primero = crearNodo(arr[0]);
+      |                   ^~~~~~~~~
+exercises.c:179:19: error: initialization of ‘Nodo *’ {aka ‘struct nodo *’} from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+exercises.c:186:23: error: assignment to ‘struct nodo *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+  186 |     actual->siguiente = crearNodo(arr[i]);
+      |                       ^
+cc1: all warnings being treated as errors
+Compilation failed
+06a9071

@@ -172,4 +172,28 @@ typedef struct nodo {
   struct nodo *siguiente; // puntero al siguiente nodo
 } Nodo;
 
-Nodo *crearListaEnlazada(int arr[], int size) { return NULL; }
+Nodo *crearListaEnlazada(int arr[], int size){ 
+  if (size==0){
+    return NULL;
+  }
+  Nodo *primero = crearNodo(arr[0]);
+  if (primero==NULL){
+    return NULL;
+  }
+  Nodo *actual = primero;
+  
+  for (int i=1;i<size;i++){
+    actual->siguiente = crearNodo(arr[i]);
+    if (actual->siguiente==NULL){
+      
+      while (primero!=NULL){
+        Nodo *temp = primero;
+        primero = primero->siguiente;
+        free(temp);
+      }
+      return NULL;
+    }
+    actual = actual->siguiente;
+  }
+  return NULL;
+}
