@@ -377,3 +377,9 @@ exercises.c:59:4: error: ‘nuevoTamaño’ undeclared (first use in this functi
 exercises.c:59:4: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 538418a
+Thu 17 Aug 2023 01:43:23 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|4
+total_score: 30/70
+7af6a2d
