@@ -415,3 +415,14 @@ exercises.c:81:14: error: ‘k’ undeclared (first use in this function)
       |              ^
 Compilation failed
 a6273ed
+Thu 17 Aug 2023 01:51:19 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:81:14: error: ‘k’ undeclared (first use in this function)
+   81 |       result[k]=arr1[i];
+      |              ^
+exercises.c:81:14: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+614d869
