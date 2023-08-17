@@ -13,6 +13,7 @@ int findMax(int arr[], int size){
   int grande=0;
   for (int i=0;i>size;i++){
     if (arr[i]>arr[i+1]){
+      grande=arr[i];
       if (arr[i]>grande){
         grande=arr[i];
       }
