@@ -355,3 +355,14 @@ exercises.c:55:6: error: ‘nuevoTamaño’ undeclared (first use in this functi
       |      ^~~~~~~~~~~
 Compilation failed
 619ec04
+Thu 17 Aug 2023 01:42:38 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:55:6: error: ‘nuevoTamaño’ undeclared (first use in this function)
+   55 |     *nuevoTamaño = 0;
+      |      ^~~~~~~~~~~
+exercises.c:55:6: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+d89c0d2
