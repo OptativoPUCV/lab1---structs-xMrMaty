@@ -3,3 +3,14 @@ Thu 17 Aug 2023 12:59:35 AM UTC:
  tests:  0|7
 total_score: 0/70
 4515ccf
+Thu 17 Aug 2023 01:05:10 AM UTC: 
+ exercises.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:14:8: error: ‘i’ undeclared (first use in this function)
+   14 |   for (i=0;i>size;i++){
+      |        ^
+exercises.c:14:8: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+f71a036
