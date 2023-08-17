@@ -42,23 +42,23 @@ los números pares del arreglo original.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize){
   int i;
-  int cantidadPares = 0;
+  int cantidadPares=0;
 
-  for (i=0;i<size; i++){
+  for (i=0;i<size;i++){
     if (arr[i]%2==0){
       cantidadPares++;
       }
   }
   
-  int *arre = (int *)malloc(cantidadPares * sizeof(int));
-  if (arre == NULL){
-    *nuevoTamaño = 0;
+  int *arre=(int *)malloc(cantidadPares * sizeof(int));
+  if (arre==NULL){
+    *newSize=0;
     return NULL;
   }
 
-  *nuevoTamaño =cantidadPares;
+  *nuevoTamaño=cantidadPares;
 
-  int index = 0;
+  int index=0;
   for (int i=0;i<size;i++){
     if (arr[i]%2==0){
       arre[index++]=arr[i];
