@@ -56,10 +56,10 @@ int *filterEvenNumbers(int arr[], int size, int *newSize){
     return NULL;
   }
 
-  *nuevoTamaño = cantidadPares;
+  *nuevoTamaño =cantidadPares;
 
   int index = 0;
-  for (int i=0;i<tamaño;i++){
+  for (int i=0;i<size;i++){
     if (arr[i]%2==0){
       arre[index++]=arr[i];
     }

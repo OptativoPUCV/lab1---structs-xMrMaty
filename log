@@ -341,3 +341,17 @@ exercises.c:55:6: error: ‘nuevoTamaño’ undeclared (first use in this functi
       |      ^~~~~~~~~~~
 Compilation failed
 6968b76
+Thu 17 Aug 2023 01:42:29 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:47:15: error: ‘tamaño’ undeclared (first use in this function)
+   47 |   for (i=0;i< tamaño; i++){
+      |               ^~~~~~
+exercises.c:47:15: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:55:6: error: ‘nuevoTamaño’ undeclared (first use in this function)
+   55 |     *nuevoTamaño = 0;
+      |      ^~~~~~~~~~~
+Compilation failed
+619ec04
