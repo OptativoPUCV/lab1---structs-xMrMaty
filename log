@@ -327,3 +327,17 @@ exercises.c:51:10: error: returning ‘int’ from a function with return type �
 cc1: all warnings being treated as errors
 Compilation failed
 ee1c59e
+Thu 17 Aug 2023 01:41:58 AM UTC: 
+ exercises.c | 24 ++++++++++++++++++++----
+ 1 file changed, 20 insertions(+), 4 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:47:15: error: ‘tamaño’ undeclared (first use in this function)
+   47 |   for (i=0;i< tamaño; i++){
+      |               ^~~~~~
+exercises.c:47:15: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:55:6: error: ‘nuevoTamaño’ undeclared (first use in this function)
+   55 |     *nuevoTamaño = 0;
+      |      ^~~~~~~~~~~
+Compilation failed
+6968b76
