@@ -205,5 +205,5 @@ Nodo *crearListaEnlazada(int arr[], int size){
       actual->siguiente = NULL;
   }
 
-  return NULL;
+  return primero;
 }
