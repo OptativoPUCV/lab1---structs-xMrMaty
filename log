@@ -102,3 +102,29 @@ exercises.c:54:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 2c5f983
+Thu 17 Aug 2023 01:30:37 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:45:8: error: array size missing in ‘arre’
+   45 |   int *arre[];
+      |        ^~~~
+exercises.c:48:16: error: comparison between pointer and integer [-Werror]
+   48 |       for(j=0;j<newSize;j++){
+      |                ^
+exercises.c:49:16: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   49 |         arre[j]=arr[i];
+      |                ^
+exercises.c:53:15: error: expected expression before ‘]’ token
+   53 |   return arre[];
+      |               ^
+exercises.c:45:8: error: variable ‘arre’ set but not used [-Werror=unused-but-set-variable]
+   45 |   int *arre[];
+      |        ^~~~
+exercises.c:54:1: error: control reaches end of non-void function [-Werror=return-type]
+   54 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+0f71a7e
