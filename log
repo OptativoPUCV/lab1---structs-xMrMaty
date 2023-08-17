@@ -426,3 +426,20 @@ exercises.c:81:14: error: ‘k’ undeclared (first use in this function)
 exercises.c:81:14: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 614d869
+Thu 17 Aug 2023 01:51:25 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:78:11: error: ‘i’ is used uninitialized in this function [-Werror=uninitialized]
+   78 |   while (i<size1&&j<size2){
+      |          ~^~~~~~
+exercises.c:78:20: error: ‘j’ is used uninitialized in this function [-Werror=uninitialized]
+   78 |   while (i<size1&&j<size2){
+      |                   ~^~~~~~
+exercises.c:77:13: error: ‘k’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   77 |   int i, j, k;
+      |             ^
+cc1: all warnings being treated as errors
+Compilation failed
+60975c4
