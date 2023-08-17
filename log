@@ -383,3 +383,21 @@ Thu 17 Aug 2023 01:43:23 AM UTC:
  tests:  0|4
 total_score: 30/70
 7af6a2d
+Thu 17 Aug 2023 01:51:00 AM UTC: 
+ exercises.c | 28 ++++++++++++++++++++++++++--
+ 1 file changed, 26 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:78:10: error: ‘i’ undeclared (first use in this function)
+   78 |   while (i<size1&&j<size2){
+      |          ^
+exercises.c:78:10: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:78:19: error: ‘j’ undeclared (first use in this function); did you mean ‘jn’?
+   78 |   while (i<size1&&j<size2){
+      |                   ^
+      |                   jn
+exercises.c:81:14: error: ‘k’ undeclared (first use in this function)
+   81 |       result[k]=arr1[i];
+      |              ^
+Compilation failed
+b12f7c7
