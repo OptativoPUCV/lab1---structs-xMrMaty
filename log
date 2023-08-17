@@ -443,3 +443,9 @@ exercises.c:77:13: error: ‘k’ may be used uninitialized in this function [-W
 cc1: all warnings being treated as errors
 Compilation failed
 60975c4
+Thu 17 Aug 2023 01:52:00 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|3
+total_score: 40/70
+fe2c92a
